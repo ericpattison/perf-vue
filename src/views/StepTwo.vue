@@ -1,5 +1,6 @@
 <template>
   <div class="step-two">
+    <MessagesList />
   </div>
 </template>
 
@@ -7,9 +8,11 @@
 import { Component, Vue } from 'vue-property-decorator';
 import store from '@/store';
 import tracking from '@/tracking';
+import MessagesList from '@/components/MessagesList.vue';
 
 @Component({
   components: {
+    MessagesList,
   },
 
   async mounted(): Promise<boolean> {

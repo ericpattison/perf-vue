@@ -1,18 +1,11 @@
 <template>
   <div class="step-one">
-    <form
-      id="step-one-form"
-      @submit.prevent="submitForm"
+    <button
+      class="submit-button"
+      @click="submitForm"
     >
-
-      <button
-        class="submit-button"
-        @click="submitForm"
-      >
-      Begin
-      </button>
-
-    </form>
+    Begin
+    </button>
   </div>
 </template>
 
@@ -20,11 +13,9 @@
 import { Component, Vue } from 'vue-property-decorator';
 import store from '@/store';
 import tracking from '@/tracking';
-import MessagesList from '@/components/MessagesList.vue';
 
 @Component({
   components: {
-    MessagesList,
   },
 })
 export default class StepOne extends Vue {
