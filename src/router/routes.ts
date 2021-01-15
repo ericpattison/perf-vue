@@ -1,10 +1,10 @@
 import { AsyncComponent } from 'vue';
 import {RouteConfig} from 'vue-router';
 
-import Home from '@/views/Home.vue';
+import Home from '../views/Home.vue';
 
-const StepOne: AsyncComponent = () => import('@/views/StepOne.vue');
-const StepTwo: AsyncComponent = () => import('@/views/StepTwo.vue');
+const StepOne: AsyncComponent = () => import('../views/StepOne.vue');
+const StepTwo: AsyncComponent = () => import('../views/StepTwo.vue');
 
 const routes: RouteConfig[] = [
     {
